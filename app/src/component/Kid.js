@@ -13,6 +13,10 @@ static getDerivedStateFromProps(props,state)
   return {danceSteps:  [...state.danceSteps,...props.furtherSteps],startedPerforming:!!props.furtherSteps.length,emotion: props.updateemotion?props.updateemotion:state.emotion};
  
 }
+componentWillUnmount()
+{
+  this.props.umount()
+}
 
 componentDidMount()
 {

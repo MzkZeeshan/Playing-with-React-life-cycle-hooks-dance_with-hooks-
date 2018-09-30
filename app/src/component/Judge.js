@@ -9,6 +9,7 @@ export default class Judge extends React.Component {
       }
    
     applaud() {
+
       
     this.props.updatestatus("happy")
    
@@ -19,6 +20,11 @@ shouldComponentUpdate(preprops,prestate)
  return this.state.stars<=5?true:false;
 
 }   
+componentDidUpdate(prevprops,prestate)
+{
+  
+}
+
     provideStars() {
      // const {stars} = this.state;
      
